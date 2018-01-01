@@ -10,7 +10,8 @@ public class SampleController5 {
 
 	
 	@RequestMapping("/doJSON")
-	public @ResponseBody ProductVO doJSON() {
+	@ResponseBody
+	public  ProductVO doJSON() {
 		ProductVO vo = new ProductVO("샘플상품", 30000);
 		
 		return vo;

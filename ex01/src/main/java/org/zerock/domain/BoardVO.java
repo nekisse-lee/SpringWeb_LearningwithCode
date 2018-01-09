@@ -1,15 +1,16 @@
 package org.zerock.domain;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class BoardVO {
-
+	
 	private Integer bno;
 	private String title;
 	private String content;
 	private String writer;
 	private Date regdate;
 	private int viewcnt;
+	
 	public Integer getBno() {
 		return bno;
 	}
@@ -52,6 +53,5 @@ public class BoardVO {
 				+ content + ", writer=" + writer + ", regdate=" + regdate
 				+ ", viewcnt=" + viewcnt + "]";
 	}
-	
 
 }
